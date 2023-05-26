@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Player</title>
+  <style>
+    body {
+      background-color: #000000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #gifContainer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="gifContainer">
+    <img src="https://cdn.discordapp.com/attachments/1111698007755341888/1111704756692455434/gayporn.gif" alt="GIF" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+
+  <audio id="audioPlayer" src="https://cdn.discordapp.com/attachments/1111698007755341888/1111704756096872582/Song_of_Unhealing.mp3" autoplay></audio>
+
+  <script>
+    const audioPlayer = document.getElementById('audioPlayer');
+
+    audioPlayer.addEventListener('play', function() {
+      // Musik wird automatisch abgespielt
+    });
+
+    audioPlayer.addEventListener('pause', function() {
+      // Musik wurde angehalten
+    });
+  </script>
+</body>
+</html>
